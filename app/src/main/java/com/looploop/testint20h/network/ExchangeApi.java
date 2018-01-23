@@ -13,4 +13,7 @@ import retrofit2.http.Url;
 public interface ExchangeApi {
     @GET
     Call<JsonObject> getOrderBook(@Url String apiUrl);
+
+    @GET
+    Call<JsonObject> getChartData(@Url String apiUrl);
 }

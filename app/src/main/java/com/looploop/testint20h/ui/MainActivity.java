@@ -1,5 +1,6 @@
 package com.looploop.testint20h.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText usdCountEt;
     private TextView resultTv;
+    private TextView chartBtn;
     private Button enterBtn;
 
     @Override
@@ -50,10 +52,18 @@ public class MainActivity extends AppCompatActivity {
         usdCountEt = findViewById(R.id.usd_count);
         enterBtn = findViewById(R.id.enter_btn);
         resultTv = findViewById(R.id.result_txt);
+        chartBtn = findViewById(R.id.get_chart_btn);
 
         yobitOrders = new YobitOrders();
         exmoOrders = new ExmoOrders();
         krakenOrders = new KrakenOrders();
+
+        chartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ChartActivity.class));
+            }
+        });
 
         mRequester = new Requester();
 

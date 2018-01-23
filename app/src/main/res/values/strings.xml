@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestInt20h</string>
+    <string name="get_profit_btn">GET PROFIT</string>
+    <string name="get_chart_btn"><u>BTC chart</u></string>
 </resources>
