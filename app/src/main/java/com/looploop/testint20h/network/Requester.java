@@ -15,4 +15,9 @@ public class Requester {
 
 
     }
+    public void getChartData(String apiUrl, Callback callback) {
+        apiInstance.getChartData(apiUrl).enqueue(callback);
+
+
+    }
 }
