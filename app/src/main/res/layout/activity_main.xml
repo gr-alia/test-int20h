@@ -8,6 +8,7 @@
     tools:context="com.looploop.testint20h.ui.MainActivity">
 
     <TextView
+        android:id="@+id/result_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -16,10 +17,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+
     <EditText
         android:id="@+id/usd_count"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
 
     <Button
         android:layout_width="match_parent"
